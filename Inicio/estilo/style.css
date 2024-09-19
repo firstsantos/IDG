@@ -2,11 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -19,7 +30,7 @@ header {
 }
 
 
-header, span {
+header, h1 {
     text-align: center;
     color: white;
     font-size: 1.6em;
@@ -38,20 +49,51 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 550px;
     border: 1px solid red;
 }
 
 .box-img {
     display: flex;
     width: 35%;
-    height: 550px;
     border: 1px solid rgb(21, 122, 38);
 }
 
 .box-txt {
     display: flex;
+    flex-flow: row wrap;
     width: 35%;
-    height: 550px;
     border: 1px solid rgb(230, 127, 9);
 }
+
+.box-txt h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 3em;
+    color: rgb(172, 9, 9);
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+.box-txt p {
+    color: rgb(107, 96, 96);
+}
+
+.btn {
+    background-color: rgb(172, 9, 9);
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 10px;
+    transition: 0.8s all;
+    margin: 2em;
+}
+
+
+.btn:hover {
+    background-color: white;
+    color: rgb(172, 9, 9);
+    border: 1px solid rgb(172, 9, 9);
+    font-size: 1.1em;
+}
+
