@@ -43,7 +43,6 @@ html, body {
 }
 
 
-
 .hero  {
     display:flex;
     justify-content: center;
@@ -61,7 +60,7 @@ html, body {
     /* border: 1px solid rgb(21, 122, 38); */
 }
 .gayz {
-    width:;
+    width: 400px;
 }
 
 .box-txt {
@@ -140,6 +139,11 @@ footer {
     margin: 40px;
 }
 
+.gayzi {
+    width: 400px;
+    margin: 20px;
+}
+
 .box-txti h2 {
     font-family: "DM Sans", sans-serif;
     font-size: 3em;
@@ -215,23 +219,61 @@ footer {
 
 
 @media screen and (max-width: 1200px){
-    .hero, .devil {
+    .hero {
         flex-direction: column-reverse;
+        width: 80%;
+    }
+
+    header {
+        font-size: 20px;
     }
 
     .box-txt {
         flex-flow: column wrap;
-        width:  100%;
-        
+        width: 100vw;
         justify-content: center;
         align-items: center;
+        text-align: center;
         padding: 40px 30px;
     }
 
     .boxtxt {
-        font-size: 60px;
+        font-size: 30px;
     }
-    .boxtxt {
+    .box-txt h2 {
+        font-size: 60px;
+        line-height: 1.1em;
+    }
+    .box-txt p {
         text-align: center;
     }
+
+    .box-item {
+        width: 90%;
+    }
+
+    .devil {
+        flex-direction: column-reverse;
+    }
+    .box-txti {
+        flex-flow: column wrap;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 30px;
+    }
+ 
+    .box-txti h2{
+        font-size: 60px;
+        line-height: 1.1em;
+    }
+    .boxtxti p {
+        text-align: center;
+    }
+    
+    .box-itemi {
+        width: 90%;
+    }
+
 }
