@@ -49,13 +49,19 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 40px;
     /* border: 1px solid red; */
 }
 
 .box-img {
     display: flex;
+    justify-content: center;
     width: 35%;
+
     /* border: 1px solid rgb(21, 122, 38); */
+}
+.gayz {
+    width:;
 }
 
 .box-txt {
@@ -112,4 +118,120 @@ html, body {
     margin: 10px;
     text-align: center;
     border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(247, 78, 78);
+    width: 100%;
+    height: 70px;
+}
+
+.devil {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box-txti {
+    display: flex;
+    flex-flow: row wrap;
+    width: 35%;
+    margin: 40px;
+}
+
+.box-txti h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 3em;
+    color: rgb(172, 9, 9);
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+.box-txti p {
+    color: rgb(107, 96, 96);
+}
+
+.btni {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    padding: 15px 25px;
+    font-family: "DM Sans", sans-serif;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    transition: 0.5s all;
+    margin: 2em;
+}
+.box-imgi {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    /* border: 1px solid rgb(21, 122, 38); */
+}
+
+.btni:hover {
+    background-color: rgb(172, 9, 9);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.especialidadesi  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.box-itemi {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(247, 78, 78);
+    padding: 30px 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.final {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    margin-top: 100px;
+    background-color: rgb(247, 78, 78);
+    color: #fff;
+    font-size: 20px;
+}
+
+.final p {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+
+}
+
+
+@media screen and (max-width: 1200px){
+    .hero, .devil {
+        flex-direction: column-reverse;
+    }
+
+    .box-txt {
+        flex-flow: column wrap;
+        width:  100%;
+        
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px;
+    }
+
+    .boxtxt {
+        font-size: 60px;
+    }
+    .boxtxt {
+        text-align: center;
+    }
 }
