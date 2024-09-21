@@ -22,7 +22,8 @@ body {
 
 header {
     background-color: rgb(247, 78, 78) ;
-    height: 80px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +34,7 @@ header {
 header, h1 {
     text-align: center;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.9em;
 
 }
 
@@ -48,15 +49,13 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 40px;
     /* border: 1px solid red; */
 }
 
 .box-img {
     display: flex;
     justify-content: center;
-    width: 35%;
-    max-width: 400px;
+    width: 35%;  
 
     /* border: 1px solid rgb(21, 122, 38); */
 }
@@ -86,6 +85,7 @@ html, body {
 
 .btn {
     background-color: rgb(172, 9, 9);
+    padding: 15px 25px;
     color: white;
     text-decoration: none;
     padding: 15px 25px;
@@ -130,132 +130,85 @@ html, body {
 }
 
 footer {
-    background-color: rgb(247, 78, 78);
-    width: 100%;
-    height: 70px;
-}
-
-.devil {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-}
-
-.box-txti {
-    display: flex;
-    flex-flow: row wrap;
-    width: 35%;
-    margin: 40px;
-}
-
-.gayzi {
-    width: 400px;
-    margin: 20px;
-}
-
-.box-txti h2 {
-    font-family: "DM Sans", sans-serif;
-    font-size: 3em;
-    color: rgb(172, 9, 9);
-    font-weight: 800;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    line-height: 40px;
-}
-.box-txti p {
-    color: rgb(107, 96, 96);
-}
-
-.btni {
-    background-color: rgb(226, 216, 216);
-    color: rgb(255, 0, 0);
-    text-decoration: none;
-    padding: 15px 25px;
-    font-family: "DM Sans", sans-serif;
-    border: 1px solid rgb(255, 0, 0);
-    border-radius: 10px;
-    transition: 0.5s all;
-    margin: 2em;
-}
-.box-imgi {
-    display: flex;
-    justify-content: center;
-    width: 35%;
-    max-width: 400px;
-    /* border: 1px solid rgb(21, 122, 38); */
-}
-
-.btni:hover {
-    background-color: rgb(172, 9, 9);
-    color: #faf9f6;
-    border: 1px solid rgb(226, 216, 216);
-}
-
-.especialidadesi  {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin-left: 10%;
-    width: 80%;
-}
-
-.box-itemi {
-    width: 100%;
-    height: 350px;
-    background-color: rgb(247, 78, 78);
-    padding: 30px 20px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.box-itemi h2 {
-    color: rgb(0, 0, 0);
-}
-
-.box-itemi p {
-    color: rgb(240, 235, 235); 
-}
-
-.final {
-    display: flex;
-    justify-content: center;
-    height: 150px;
     margin-top: 100px;
     background-color: rgb(247, 78, 78);
-    color: #fff;
-    font-size: 20px;
+    color: white;
+    font-size: 22px;
+    height: 150px;
 }
 
-.final p {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-
-}
 
 
 @media screen and (max-width: 1200px) {
     .hero {
-        flex-direction: column;
-        margin: 20px; /* Reduzido para mais espaço */
-    }
-
-    .box-img {
-        width: 80%;
-        margin: 0 auto; /* Centraliza a imagem */
+        flex-direction: column-reverse;
     }
 
     .box-txt {
-        width: 80%;
-        margin: 0 auto; /* Centraliza o texto */
+        flex-flow: column wrap;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 40px;
+    }
+    
+    .box-txt {
+        font-size: 50px;
     }
 
+    .box-txt p  {
+        text-align:right
+    }
+
+    .box-img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
     .box-item {
-        width: 90%;
-        margin: 10px auto; /* Centraliza e ajusta margens */
+        width: 95%;
     }
-}
+    
+    .final {
+        font-size: 18px;
+        text-align: center;
+    }
 
+    @media screen  and (max-width: 1200px){
+        body {
+            flex-flow: column-reverse ;
+        }
+
+        .box-txt {
+            flex-flow: column wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 30px;
+        }
+
+        .box-txt h2{
+            font-size: 55px;
+        }
+
+        .box-txt p {
+            text-align: center;
+        }
+
+        .box-img {
+            width: 100%;
+        }
+
+        .box-item  {
+            width: 95%;
+        }
+
+        .final {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
