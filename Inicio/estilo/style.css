@@ -168,12 +168,77 @@ footer {
 
 .txta p {
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    flex-wrap: wrap;
     text-align: left;
+    color: rgb(107, 96, 96);
     width: 50%;
     padding-top: 40px;
-    text-indent: 15px;
+    padding-bottom: 40px;
+
+}
+
+.imgi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imgi img {
+    width: 50%;
+    height: 50%;
+}
+
+.bti {
+    background-color: rgb(172, 9, 9);
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 10px;
+    transition: 0.5s all;
+    margin: 2em;
+}
+
+.bti:hover {
+    background-color: rgb(226, 216, 216);
+    color: rgb(179, 9, 9);
+    border: 1px solid rgb(172, 9, 9);
+}
+
+.imgi p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    color: rgb(107, 96, 96);
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.azul   {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: column;
+}
+.rosa {
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    flex-direction: column; /* Mantém a estrutura em coluna */
+    background-color: #000000;
+    height: 50%;
+    width: 50%; /* Ajuste a largura conforme necessário */
+    padding: 20px; /* Adiciona um pouco de espaçamento interno */
+    border-radius: 15px;
+}
+
+.rosa a {
+    text-decoration: none;
+    color: rgb(247, 78, 78);
+    font-family: "DM Sans", sans-serif;
+}
+.rosa p  {
+    color: rgb(107, 96, 96);
 }
 
 
@@ -204,7 +269,7 @@ footer {
         line-height: 1.1em;
     }
     .box-txt p {
-        text-align: left;
+        text-align: center ;
         font-size: 0.9em;
     }
 
