@@ -241,7 +241,7 @@ footer {
 
 .aru a {
     text-decoration: none;
-    color: rgb(226, 216, 216);
+    color: rgb(0, 0, 0);
     font-family: "DM Sans", sans-serif;
     padding-inline: 10px;
 }
@@ -265,9 +265,6 @@ footer {
         padding: 40px 30px;
     }
 
-    .boxtxt {
-        font-size: 30px;
-    }
     .box-txt h2 {
         font-size: 60px;
         line-height: 1.1em;
@@ -290,4 +287,37 @@ footer {
         font-size: 0.8em;
     }
 
+    .txt {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .txt h2 {
+        font-size: 20px;
+    }
+
+    .txta p {
+        flex-flow: column wrap;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 40px 30px;
+        font-size: 0.9em;
+    }
+
+    .imgi p {
+        flex-flow: column wrap;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 40px 30px;
+        font-size: 0.9em;
+    }
+
+    .rosa {
+        width: 90%;
+        margin-bottom: 30px;
+    }
 }
