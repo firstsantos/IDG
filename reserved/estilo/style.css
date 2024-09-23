@@ -248,6 +248,10 @@ footer {
     padding-inline: 10px;
 }
 
+.aru a:hover {
+    color: white;
+}
+
 @media screen and (max-width: 1200px){
     .hero {
         flex-direction: column-reverse;
@@ -310,6 +314,10 @@ footer {
         text-align: left;
         padding: 40px 30px;
         font-size: 0.9em;
+    }
+
+    .imgi img {
+        width: 85%;
     }
 
     .imgi p {
