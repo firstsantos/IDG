@@ -161,7 +161,7 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color: rgb(247, 78, 78);
+    color: rgb(172, 9, 9);
     padding-top: 40px;
 
 }
@@ -234,7 +234,7 @@ footer {
 
 .rosa a {
     text-decoration: none;
-    color: rgb(247, 78, 78);
+    color: rgb(179, 9, 9);
     font-family: "DM Sans", sans-serif;
 }
 .rosa p  {
