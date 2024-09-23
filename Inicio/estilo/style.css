@@ -130,23 +130,6 @@ footer {
     width: 100%;
     height: 70px;
 }
-.final {
-    display: flex;
-    justify-content: center;
-    height: 150px;
-    margin-top: 100px;
-    background-color: rgb(247, 78, 78);
-    color: #fff;
-    font-size: 20px;
-}
-
-.final p {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-
-}
-
 
 .txta {
     display: flex;
@@ -234,13 +217,34 @@ footer {
 
 .rosa a {
     text-decoration: none;
-    color: rgb(179, 9, 9);
+    color: rgb(204, 13, 13);
     font-family: "DM Sans", sans-serif;
 }
 .rosa p  {
-    color: rgb(107, 96, 96);
+    color: rgb(138, 122, 122);
 }
 
+.final {
+    height: auto;
+}
+
+.fini {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o h2 */
+}
+.aru {
+    display: flex;
+    flex-direction: column; /* Coloca os <p> em uma coluna */
+    align-items: center; /* Alinha os <p> à esquerda */
+}
+
+.aru a {
+    text-decoration: none;
+    color: rgb(226, 216, 216);
+    font-family: "DM Sans", sans-serif;
+    padding-inline: 10px;
+}
 
 @media screen and (max-width: 1200px){
     .hero {
